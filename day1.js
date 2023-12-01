@@ -16,7 +16,10 @@ In this example, the calibration values of these four lines are 12, 38, 15, and 
 
 */
 
-const input = "1abc2";
+const input1 = "1abc2";
+const input2 = "pqr3stu8vwx";
+const input3 = "a1b2c3d4e5f";
+const input4 = "treb7uchet";
 
 const day1 = (input) => {
   console.log("Input: ", input);
@@ -31,8 +34,10 @@ const day1 = (input) => {
     ? console.log("Ultimo numero encontrado: ", lastDigit[0])
     : console.log("nao foi encontrado nenhum numero");
 
-    const parsedNumber= firstDigit+lastDigit;
-    console.log('Output: ', parsedNumber);
+  const parsedNumber = firstDigit + lastDigit;
+  console.log("Output: ", parsedNumber);
+  return parseInt(parsedNumber);
 };
 
-day1(input);
+const somatorio = day1(input1) + day1(input2) + day1(input3) + day1(input4);
+console.log('SOMATORIO: ', somatorio);
