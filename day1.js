@@ -16,4 +16,23 @@ In this example, the calibration values of these four lines are 12, 38, 15, and 
 
 */
 
-console.log('SETUP BENFIQUISTA');
+const input = "1abc2";
+
+const day1 = (input) => {
+  console.log("Input: ", input);
+  const firstDigit = input.match(/\d/);
+  const lastDigit = input.match(/\d(?=\D*$)/);
+
+  firstDigit
+    ? console.log("Primeiro numero encontrado: ", firstDigit[0])
+    : console.log("nao foi encontrado nenhum numero");
+
+  lastDigit
+    ? console.log("Ultimo numero encontrado: ", lastDigit[0])
+    : console.log("nao foi encontrado nenhum numero");
+
+    const parsedNumber= firstDigit+lastDigit;
+    console.log('Output: ', parsedNumber);
+};
+
+day1(input);
