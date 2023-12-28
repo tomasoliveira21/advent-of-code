@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fileName = 'day1/input';
+const fileName = '2023/day1/input';
 
 
 fs.readFile(fileName, 'utf-8', (err, data) => {
