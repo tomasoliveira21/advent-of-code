@@ -1,7 +1,7 @@
 const condition = { red: 12, green: 13, blue: 14 };
 const fs = require("fs");
 
-fs.readFile("2023/day2/input.txt", "utf-8", (err, data) => {
+fs.readFile("2023/02/input.txt", "utf-8", (err, data) => {
   const input = data
     .split("\n")
     .filter((n) => n)
